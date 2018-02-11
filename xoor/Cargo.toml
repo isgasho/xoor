@@ -1,0 +1,10 @@
+[package]
+name = "xoor"
+version = "0.1.0"
+authors = ["Arthur M. <vikr@protonmail.com>"]
+
+[lib]
+plugin = true
+crate-type = ["dylib"]
+
+[dependencies]

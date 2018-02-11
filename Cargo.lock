@@ -1,0 +1,11 @@
+[[package]]
+name = "hello-world"
+version = "0.1.0"
+dependencies = [
+ "xoor 0.1.0",
+]
+
+[[package]]
+name = "xoor"
+version = "0.1.0"
+
