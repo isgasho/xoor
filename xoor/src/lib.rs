@@ -20,7 +20,7 @@ fn expand_xoor(cx: &mut ExtCtxt, sp: Span, args: &[TokenTree]) -> Box<MacResult 
 
     let encrypted = match args[0] {
         TokenTree::Token(_, token::Literal(Lit::Str_(input), _)) => {
-            let pre_rev = input.as_str().clone();
+            let pre_rev = input.as_str();
 
             pre_rev
                 .bytes()
