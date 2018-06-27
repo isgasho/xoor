@@ -6,7 +6,7 @@ fn decrypt(enc: &[u8]) -> Option<String> {
         .map(|x| x ^ 127)
         .collect();
 
-    std::string::String::from_utf8(decrypted).ok()
+    String::from_utf8(decrypted).ok()
 }
 
 fn main() {
