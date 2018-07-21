@@ -11,7 +11,7 @@ use syntax::ext::base::{ExtCtxt, MacResult, DummyResult, MacEager};
 use syntax::ext::quote::rt::Span;
 use syntax::ext::build::AstBuilder;
 
-fn expand_xoor(cx: &mut ExtCtxt, sp: Span, args: &[TokenTree]) -> Box<MacResult + 'static> {
+fn expand_xoor(cx: &mut ExtCtxt, sp: Span, args: &[TokenTree]) -> Box<dyn MacResult + 'static> {
     if args.len() != 1 {
         cx.span_err(sp, "there should only be one argument");
         
